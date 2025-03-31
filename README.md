@@ -2,13 +2,6 @@
 
 This repository provides a simulation for calculating various stock market statistics based on stock and trade data. The key statistics calculated include Dividend Yield, P/E Ratio, Volume Weighted Stock Price (VWSP), and All Share Index.
 
-## Overview
-
-Core Functions:
-1. Setting up beverage stocks and adding them to the stock market.
-2. Creating buy/sell trades for different beverage stocks and recording them in the market.
-3. Calculating key stock market statistics based on the recorded data - Dividend Yield, P/E Ratio, Volume Weighted Stock Price (VWSP), and All Share Index.
-
 ## Requirements
 
 - Python 3.x
@@ -30,6 +23,18 @@ Running all tests:
 pytest tests/ --durations=0
 ```
 This will automatically discover and run all tests in the tests directory. It also lists down the time taken for the tests.
+
+## Overview
+
+#### Core Functions:
+1. Setting up beverage stocks and adding them to the stock market.
+2. Creating buy/sell trades for different beverage stocks and recording them in the market.
+3. Calculating key stock market statistics based on the recorded data - Dividend Yield, P/E Ratio, Volume Weighted Stock Price (VWSP), and All Share Index.
+
+#### Highlights / Optimizations
+1. **Uses Pandas for Efficient Data Handling:** Operations are optimized using Pandas DataFrames, ensuring efficient data manipulation and computation.
+2. **Extensible Calculator Infrastructure:** Easily plug in new calculators to extend functionality by inheriting from base calculator classes.
+3. **Scalable to Large Datasets:** Capable of handling large datasets with efficient calculations, demonstrated by handling over 100k trades in tests.
 
 ## Core Entities
 ```python
